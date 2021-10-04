@@ -7,6 +7,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using System.IO;
 
 namespace Francois_Cornelius_QuizPRG282
 {
@@ -15,6 +16,13 @@ namespace Francois_Cornelius_QuizPRG282
         public Form1()
         {
             InitializeComponent();
+        }
+
+        private void btnReadFile_Click(object sender, EventArgs e)
+        {
+            //Step 16
+            lbMain.DataSource = File.ReadAllLines(@"C:\Users\fcorn\source\repos\Francois_Cornelius_QuizPRG282\Francois_Cornelius_QuizPRG282\bin\Debug\Users.txt");
+
         }
     }
 }

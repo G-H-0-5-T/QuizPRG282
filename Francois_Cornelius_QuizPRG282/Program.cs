@@ -18,9 +18,6 @@ namespace Francois_Cornelius_QuizPRG282
             Application.SetCompatibleTextRenderingDefault(false);
             Application.Run(new Form1());
             
-            //Step 16:
-            string[] users = File.ReadAllLines(@"C:\Users\fcorn\source\repos\Francois_Cornelius_QuizPRG282\Francois_Cornelius_QuizPRG282\bin\Debug\Users.txt");
-            listBox1.Items.AddRange(users);
         }
     }
 }

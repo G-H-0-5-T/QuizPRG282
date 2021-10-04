@@ -29,17 +29,17 @@ namespace Francois_Cornelius_QuizPRG282
         /// </summary>
         private void InitializeComponent()
         {
-            this.listBox1 = new System.Windows.Forms.ListBox();
+            this.lbMain = new System.Windows.Forms.ListBox();
             this.btnReadFile = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
-            // listBox1
+            // lbMain
             // 
-            this.listBox1.FormattingEnabled = true;
-            this.listBox1.Location = new System.Drawing.Point(97, 52);
-            this.listBox1.Name = "listBox1";
-            this.listBox1.Size = new System.Drawing.Size(592, 147);
-            this.listBox1.TabIndex = 0;
+            this.lbMain.FormattingEnabled = true;
+            this.lbMain.Location = new System.Drawing.Point(97, 52);
+            this.lbMain.Name = "lbMain";
+            this.lbMain.Size = new System.Drawing.Size(592, 147);
+            this.lbMain.TabIndex = 0;
             // 
             // btnReadFile
             // 
@@ -49,6 +49,7 @@ namespace Francois_Cornelius_QuizPRG282
             this.btnReadFile.TabIndex = 1;
             this.btnReadFile.Text = "Read File";
             this.btnReadFile.UseVisualStyleBackColor = true;
+            this.btnReadFile.Click += new System.EventHandler(this.btnReadFile_Click);
             // 
             // Form1
             // 
@@ -56,7 +57,7 @@ namespace Francois_Cornelius_QuizPRG282
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 375);
             this.Controls.Add(this.btnReadFile);
-            this.Controls.Add(this.listBox1);
+            this.Controls.Add(this.lbMain);
             this.Name = "Form1";
             this.Text = "Form1";
             this.ResumeLayout(false);
@@ -65,7 +66,7 @@ namespace Francois_Cornelius_QuizPRG282
 
         #endregion
 
-        private System.Windows.Forms.ListBox listBox1;
+        private System.Windows.Forms.ListBox lbMain;
         private System.Windows.Forms.Button btnReadFile;
     }
 }
